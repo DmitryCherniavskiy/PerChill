@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo\src\main\resources\templates\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

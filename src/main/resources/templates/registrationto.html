@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <link rel="stylesheet" href="../static/css/regto.css" media="screen" th:href="@{/css/regto.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+
+    <meta name="_csrf" content="${_csrf.token}" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.parameterName}" th:content="${_csrf.parameterName}"/>
+
+</head>
+<body ng-app="reg" ng-controller="RegistrationController">
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="find_title">Регистрация</h1>
+            <div class="main">
+                <h2 class="reg_title">Выберите тип аккаунта:</h2>
+                <div class="list">
+                    <button  href="/registration" class="inside_city" id="client" onClick=""><a class="inside_city" href="/registration">Клиент</a></button>
+                    <button href="" class="between_city" id="to" onClick="">Исполнитель</button>
+                </div>
+                <div class="main_inner">
+                    <div class="div_form">
+                        <form action="#" class="form_reg" th:action="@{'/registrationto/'}" method="post">
+                            <input type="text" th:field="${to.telephone}" placeholder="Телефон"/>
+                            <input type="text" th:field="${to.name}" placeholder="Имя" />
+                            <input type="text" th:field="${to.sname}" placeholder="Фамилия"/>
+                            <input type="text" th:field="${to.pname}" placeholder="Отчество"/>
+                            <input type="text" th:field="${to.email}" placeholder="Почта"/>
+                            <input type="password" th:field="${user.passhash}" placeholder="Пароль"/>
+                            <input type="password" th:field="${user.confirmPasshash}" placeholder="Подтвердите пароль"/>
+                            <input type="submit" class="reg_button" value="Зарегистрироваться"/>
+                            <a th:text="${error}"></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

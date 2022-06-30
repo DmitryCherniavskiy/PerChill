@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <link rel="stylesheet" href="../static/css/clientAccount.css" media="screen" th:href="@{/css/clientAccount.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+
+    <meta name="_csrf" content="${_csrf.token}" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.parameterName}" th:content="${_csrf.parameterName}"/>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="js/clientAccount.js"></script>
+</head>
+<body ng-app="client" ng-controller="ClientController">
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="find_title">Личный профиль</h1>
+            <div class="main">
+                <h2 class="personal_title">Персональные данные</h2>
+                <div class="main_inner">
+                        <div class="div_form" ng-controller="getInfo">
+                            <div class="image">
+                                <a href="#"><img class="image" src="{{info.image}}" alt=""></a>
+                            </div>
+                            <div class="personal_data">
+                                <form ng-submit="editInfo()">
+                                    <div class="transport">
+                                        <a class="category_data">Телефон: {{info.telephone}}</a>
+                                    </div>
+                                    <table>
+                                        <tr><td><a class="category_data">Имя: </a></td><td><input type="" class="input_name" id="input_name" name="input_name" ng-model="info.name"></td></tr>
+                                        <tr><td><a class="category_data">Фамилия: </a></td><td><input type="" class="input_sname" id="input_sname" name="input_sname" ng-model="info.sname"></td></tr>
+                                        <tr><td><a class="category_data">Отчество: </a></td><td><input type="" class="input_pname" id="input_pname" name="input_pname" ng-model="info.pname"></td></tr>
+                                        <tr><td><a class="category_data">Почта: </a></td><td><input type="" class="input_email" id="input_email" name="input_email" ng-model="info.email"></td></tr>
+                                        <tr><td><a class="category_data">Картинка: </a></td><td><input type="" class="input_image" id="input_image" name="input_image" ng-model="info.image"></td></tr>
+                                        <tr><td></td><td><button class="redactF_button" type="submit">
+                                            <span>Редактировать</span>
+                                        </button></td></tr>
+                                    </table>
+
+                                </form>
+                            </div>
+                        </div>
+                </div>
+                <div class="orders" ng-controller="getOrders" ng-show="orders.length > 0">
+                    <h2 class="personal_title">Заказы</h2>
+                    <div class="order" ng-repeat="order in orders track by $index" id="{{order.id}}">
+                        <div class="order_info">
+                            <a id="date{{$index}}" class="category_order1">Дата создания заказа: {{order.date}}</a>
+                            <a id="dateStart{{$index}}" class="category_order1">Дата отправления: {{order.date_start}}</a>
+                            <a id="startPlace{{$index}}" class="category_order1">Откуда: {{order.start_place}}</a>
+                            <a id="endPlace{{$index}}" class="category_order1">Куда: {{order.end_place}}</a>
+                        </div>
+                        <a id="name{{$index}}" class="category_order2">Исполнитель: {{order.to.name + ' ' + order.to.pname + ' ' + order.to.sname}}</a>
+                        <div class="feedback"></div>
+                        <a id="cost{{$index}}" class="category_order2">Стоимость: {{order.price}}</a>
+                        <a id="status{{$index}}" class="category_order2">Статус заказа: {{order.status}}</a>
+                        <form ng-submit="addGrade($index)">
+                            <p>Оценка</p>
+                            <input type="text" id="order_grade" name="order_grade" ng-model="orders[$index].grade">
+                            <button type="submit" class="feedback_button">
+                                <span>Оценить</span>
+                            </button>
+                            <button class="feedback_button">
+                                <a href="/chat/{{order.to.telephone}}/{{info.telephone}}">Открыть чат</a>
+                            </button>
+                            <div class="alert alert-danger" role="alert" ng-show="errormessage">{{errormessage}}</div>
+                        </form>
+                    </div>
+                </div>
+
+                <h2 class="personal_title">Избранное</h2>
+                <div class="orders">
+                       <div class="order">
+                            <div class="order_inner">
+                                    <div class="image">
+                                        <a href="#"><img class="image" src="https://mobimg.b-cdn.net/v3/fetch/a4/a48610bf58b05618a5470c6da6ecde49.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="description">
+                                        <div class="name_grade">
+                                            <h3 class="name">
+                                                Чернявский Святослав Олегович
+                                            </h3>
+                                            <div class="grade">
+                                                <div class="review">
+                                                    999 отзывов
+                                                </div>
+                                                <div class="grade_number">
+                                                    8.1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_desc">
+                                            Предоставляю услуги перевозок как по городу так и межгород. Имеются автобусы разной вместительности и разного класса.
+                                        </div>
+                                    </div>
+                                </div>
+                         </div>
+                   </div>
+                   </div>
+           </div>
+        </div>
+    </div>
+
+</body>
+</html>

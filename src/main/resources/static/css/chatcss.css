@@ -1,0 +1,159 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    background-color: #0656fe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav{
+    font-size: 20px;
+}
+
+.header_link{
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto 20px;
+}
+
+.header_link:hover{
+    background-color: #1676df;
+}
+
+/* INTRO */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    background-color: #0656fe;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.find_title{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+
+}
+
+/* Main */
+
+.main{
+    background-color: white;
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px;
+
+}
+
+/* Personal data (Персональные данные)*/
+
+.main_inner{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.div_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_data{
+    color: black;
+}
+
+.client{
+    text-align: right;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.to{
+    text-align: left;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message_date{
+    font-size: 15px;
+}
+
+.send_message{
+    margin: 10px auto;
+    size: auto;
+}
+
+input.message {
+    width:  600px;
+    height: 40px;
+    border:1px solid #999;
+    font-size:16px;
+    font-family: Tahoma;
+}
+
+.send_button{
+    background-color: #f4511e;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 2px;
+}
+

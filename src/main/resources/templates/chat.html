@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <link rel="stylesheet" href="../static/css/clientAccount.css" media="screen" th:href="@{/css/chatcss.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+
+    <meta name="_csrf" content="${_csrf.token}" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.parameterName}" th:content="${_csrf.parameterName}"/>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="js/chat.js"></script>
+</head>
+<body ng-app="client" ng-controller="ClientController">
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="find_title">Чат</h1>
+            <div class="main">
+                <div class="main_inner">
+                    <form class="send_message" th:action="@{'/chat/clientSend/'}" th:object="${mes}" method="post">
+                        <input type="text" class="message" th:field="*{textMessage}">
+                        <button class="send_button" type="submit">
+                            <span>Отправить</span>
+                        </button>
+                    </form>
+                    <div class="div_form">
+                        <div class="personal_data" th:each="message : ${messages}">
+                            <div th:attr="class=${message.fromMessage}">
+                                <a th:text="${message.textMessage}"></a>
+                                <a class="message_date" th:text="${message.date}"></a>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

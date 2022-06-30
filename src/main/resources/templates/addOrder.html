@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <link rel="stylesheet" href="../static/css/login.css" media="screen" th:href="@{/css/login.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="find_title">Создание заказа</h1>
+                <div class="main">
+                    <div class="main_inner">
+                        <div class="div_form">
+                            <form action="#" th:action="@{'/addOrder/'+${to} +'/'+${transport}+ '/'}" th:object="${order}" method="post">
+                                <input type="text" th:field="*{start_place}" placeholder="Место отправления" />
+                                <input type="text" th:field="*{end_place}" placeholder="Пункт прибытия"/>
+                                <input type="text" th:field="*{price}" placeholder="Стоимость заказа"/>
+                                <input type="datetime-local" th:field="*{date_start}" placeholder="Дата и время выезда"/>
+                                <input type="text" th:field="*{comment}" placeholder="Комментарий к заказу"/>
+                                <input type="submit" id="addButton" value="Создать"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

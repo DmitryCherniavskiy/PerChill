@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a738c0c-77c1-43e9-bf7b-6812cbc26daa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../lec3-sample-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lec3-sample-jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lec4-sample-jpa/nb-configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/DBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/SchoolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/SchoolDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/rest/SchoolRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/rest/SchoolRestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28sHQtWcn9iqqbWcF0eqCMZjnnw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="derby&#10;postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46091953" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="info.stepanoff.trsis.samples.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="info.stepanoff.trsis.samples.rest" />
+      <recent name="info.stepanoff.trsis.samples.service" />
+      <recent name="info.stepanoff.trsis.samples.db.dao" />
+      <recent name="info.stepanoff.trsis.samples.config" />
+      <recent name="info.stepanoff.trsis.samples.db.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo\src\main\resources\templates" />
+      <recent name="C:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo\src\main\resources\static\css" />
+      <recent name="C:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo\src\main\resources\static\js" />
+      <recent name="C:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\dimka\OneDrive\Рабочий стол\trsislecturesmaterials\lec5-sample-jpa-repo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trsis.jpa.repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="info.stepanoff.trsis.samples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="info.stepanoff.trsis.samples" />
+      <option name="MAIN_CLASS_NAME" value="info.stepanoff.trsis.samples.Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.testAddOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trsis.jpa.repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="info.stepanoff.trsis.samples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="info.stepanoff.trsis.samples" />
+      <option name="MAIN_CLASS_NAME" value="info.stepanoff.trsis.samples.Tests" />
+      <option name="METHOD_NAME" value="testAddOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lec5-sample-jpa-repo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lec5-sample-jpa-repo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="trsis.jpa.repo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="info.stepanoff.trsis.samples.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Tests" />
+      <item itemvalue="JUnit.Tests.testAddOrder" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tests.testAddOrder" />
+        <item itemvalue="JUnit.Tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a738c0c-77c1-43e9-bf7b-6812cbc26daa" name="Default Changelist" comment="" />
+      <created>1651998362069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651998362069</updated>
+      <workItem from="1651998363406" duration="12792000" />
+      <workItem from="1652082025013" duration="37669000" />
+      <workItem from="1652257794220" duration="95368000" />
+      <workItem from="1652581136909" duration="4474000" />
+      <workItem from="1652613408310" duration="2911000" />
+      <workItem from="1652617491734" duration="1547000" />
+      <workItem from="1652619063587" duration="73372000" />
+      <workItem from="1653064814975" duration="31090000" />
+      <workItem from="1653166779873" duration="19943000" />
+      <workItem from="1653305009765" duration="81798000" />
+      <workItem from="1653576482731" duration="64737000" />
+      <workItem from="1653812837131" duration="108952000" />
+      <workItem from="1654076756342" duration="32547000" />
+      <workItem from="1654196682316" duration="603000" />
+      <workItem from="1654344850264" duration="17850000" />
+      <workItem from="1654545648955" duration="37229000" />
+      <workItem from="1654873362455" duration="4206000" />
+      <workItem from="1655035418402" duration="4025000" />
+      <workItem from="1655154610785" duration="8928000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="255" key="#Assign_Data_Sources" timestamp="1652101210962">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="588" y="255" key="#Assign_Data_Sources/0.0.1376.727@0.0.1376.727" timestamp="1652101210962" />
+    <state x="452" y="188" key="#Notifications" timestamp="1652617516784">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="452" y="188" key="#Notifications/0.0.1376.727@0.0.1376.727" timestamp="1652617516784" />
+    <state x="169" y="0" key="#Project_Structure" timestamp="1654021790680">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="169" y="0" key="#Project_Structure/0.0.1376.727@0.0.1376.727" timestamp="1654021790680" />
+    <state x="121" y="205" key="#SQL_Dialects" timestamp="1652001648840">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="121" y="205" key="#SQL_Dialects/0.0.1376.727@0.0.1376.727" timestamp="1652001648840" />
+    <state x="287" y="0" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654025599572">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="287" y="0" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1376.727@0.0.1376.727" timestamp="1654025599572" />
+    <state x="494" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1654625561496">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="494" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1376.727@0.0.1376.727" timestamp="1654625561496" />
+    <state x="562" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1652618147303">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="562" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1376.727@0.0.1376.727" timestamp="1652618147303" />
+    <state x="324" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1652617993713">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="324" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1376.727@0.0.1376.727" timestamp="1652617993713" />
+    <state x="474" y="258" width="439" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1653815327621">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="474" y="258" width="439" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1376.727@0.0.1376.727" timestamp="1653815327621" />
+    <state x="174" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1653815221669">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="174" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1376.727@0.0.1376.727" timestamp="1653815221669" />
+    <state x="419" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1653320573415">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="419" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1376.727@0.0.1376.727" timestamp="1653320573415" />
+    <state x="444" y="67" key="#xdebugger.evaluate" timestamp="1653229358199">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="444" y="67" key="#xdebugger.evaluate/0.0.1376.727@0.0.1376.727" timestamp="1653229358199" />
+    <state x="93" y="93" width="1190" height="541" key="DiffContextDialog" timestamp="1653409932362">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="93" y="93" width="1190" height="541" key="DiffContextDialog/0.0.1376.727@0.0.1376.727" timestamp="1653409932362" />
+    <state x="469" y="119" key="FileChooserDialogImpl" timestamp="1654021965479">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="469" y="119" key="FileChooserDialogImpl/0.0.1376.727@0.0.1376.727" timestamp="1654021965479" />
+    <state width="1333" height="172" key="GridCell.Tab.0.bottom" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.0.bottom/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.0.center" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.0.center/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.0.left" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.0.left/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.0.right" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.0.right/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.1.bottom" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.1.bottom/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.1.center" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.1.center/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.1.left" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.1.left/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="172" key="GridCell.Tab.1.right" timestamp="1655164877502">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="172" key="GridCell.Tab.1.right/0.0.1376.727@0.0.1376.727" timestamp="1655164877502" />
+    <state width="1333" height="222" key="GridCell.Tab.2.bottom" timestamp="1654192786129">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="222" key="GridCell.Tab.2.bottom/0.0.1376.727@0.0.1376.727" timestamp="1654192786129" />
+    <state width="1333" height="222" key="GridCell.Tab.2.center" timestamp="1654192786128">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="222" key="GridCell.Tab.2.center/0.0.1376.727@0.0.1376.727" timestamp="1654192786128" />
+    <state width="1333" height="222" key="GridCell.Tab.2.left" timestamp="1654192786128">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="222" key="GridCell.Tab.2.left/0.0.1376.727@0.0.1376.727" timestamp="1654192786128" />
+    <state width="1333" height="222" key="GridCell.Tab.2.right" timestamp="1654192786128">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state width="1333" height="222" key="GridCell.Tab.2.right/0.0.1376.727@0.0.1376.727" timestamp="1654192786128" />
+    <state x="219" y="19" key="Maven.ArtifactSearchDialog" timestamp="1654022403688">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="219" y="19" key="Maven.ArtifactSearchDialog/0.0.1376.727@0.0.1376.727" timestamp="1654022403688" />
+    <state x="365" y="68" width="727" height="590" key="NewModule_or_Project.wizard" timestamp="1652614884932">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="365" y="68" width="727" height="590" key="NewModule_or_Project.wizard/0.0.1376.727@0.0.1376.727" timestamp="1652614884932" />
+    <state x="169" y="0" key="SettingsEditor" timestamp="1654033360968">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="169" y="0" key="SettingsEditor/0.0.1376.727@0.0.1376.727" timestamp="1654033360968" />
+    <state x="100" y="100" width="1176" height="527" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1655163264697">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="100" y="100" width="1176" height="527" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1376.727@0.0.1376.727" timestamp="1655163264697" />
+    <state x="146" y="93" width="1084" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1653525911956">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="146" y="93" width="1084" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1376.727@0.0.1376.727" timestamp="1653525911956" />
+    <state x="400" y="96" width="575" height="534" key="find.popup" timestamp="1654633119851">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="400" y="96" width="575" height="534" key="find.popup/0.0.1376.727@0.0.1376.727" timestamp="1654633119851" />
+    <state x="462" y="265" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1652101037884">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="462" y="265" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1376.727@0.0.1376.727" timestamp="1652101037884" />
+    <state x="122" y="25" key="new project wizard" timestamp="1653160413914">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="122" y="25" key="new project wizard/0.0.1376.727@0.0.1376.727" timestamp="1653160413914" />
+    <state x="351" y="48" width="672" height="678" key="search.everywhere.popup" timestamp="1653218930139">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="351" y="48" width="672" height="678" key="search.everywhere.popup/0.0.1376.727@0.0.1376.727" timestamp="1653218930139" />
+    <state x="216" y="47" key="spring file set editor" timestamp="1652619951366">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="216" y="47" key="spring file set editor/0.0.1376.727@0.0.1376.727" timestamp="1652619951366" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/rest/RegistrationRestController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/rest/UserDataRestService.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/db/model/TransportOperator.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/info/stepanoff/trsis/samples/rest/UserDataRestService.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/trsis_jpa_repo$Application.ic" NAME="Application Coverage Results" MODIFIED="1654023487170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <link rel="stylesheet" href="../static/css/transportPage.css" media="screen" th:href="@{/css/transportPage.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="find_title">Личный профиль</h1>
+            <div class="main">
+                <h2 class="personal_title">Персональные данные</h2>
+                <div class="main_inner">
+                        <div class="div_form">
+                            <div class="image">
+                                <a href="#"><img class="image" th:src="${info.image}" alt=""></a>
+                            </div>
+                            <div class="personal_data">
+                                <div class="data">
+                                    <a class="category_data" th:text="${'Фамилия: ' + info.sname}"></a>
+                                    <a class="category_data" th:text="${'Имя: ' + info.name}"></a>
+                                    <a class="category_data" th:text="${'Отчество: ' + info.pname}"></a>
+                                    <a class="category_data" th:text="${'Почта: ' + info.email}"></a>
+                                    <a id="telephone" class="category_data" th:text="${'Телефон: ' + info.telephone}"></a>
+                                    <a class="category_data" th:text="${info.description}"></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="orders" ng-controller="getTransport" ng-show="transportList.length > 0">
+                    <h2 class="personal_title">Транспортные стредства</h2>
+                    <div class="order" th:each="transport : ${transports}">
+                        <div class="div_form">
+                            <div class="image">
+                                <a href="#"><img class="image" th:src="${transport.image}" alt=""></a>
+                            </div>
+
+                            <div class="personal_data">
+                                <div class="transport">
+                                    <a class="category_order2" th:text="${'Модель: ' + transport.model}"></a>
+                                </div>
+                                <div class="transport">
+                                    <a class="category_order2" th:text="${'Класс: ' + transport.transportClass}"></a>
+                                </div>
+                                <div class="transport">
+                                    <a class="category_order2" th:text="${'Описание: ' + transport.description}"></a>
+                                </div>
+                                <div class="transport">
+                                    <a class="category_order2" th:text="${'Год выпуска: ' + transport.year}"></a>
+                                </div>
+                                <div class="transport">
+                                    <a class="category_order2" th:text="${'Вместимость: ' + transport.number}"></a>
+                                </div>
+                                <div class="transport" sec:authorize="hasAuthority('user')">
+                                    <form method="GET" th:action="@{'/addOrder/'+${info.id} +'/'+${transport.id}+ '/'}">
+                                        <button type="submit" class="link-button">Забронировать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

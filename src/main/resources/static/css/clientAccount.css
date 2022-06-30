@@ -1,0 +1,392 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    background-color: #0656fe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav{
+    font-size: 20px;
+}
+
+.header_link{
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto 20px;
+}
+
+.header_link:hover{
+    background-color: #1676df;
+}
+
+/* INTRO */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    background-color: #0656fe;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.find_title{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+
+}
+
+/* Main */
+
+.main{
+    background-color: white;
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px;
+
+}
+
+/* Personal data (Персональные данные)*/
+
+.main_inner{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.div_form{
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    height: 22vh;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.avatar_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    margin: 0 auto;
+    color: black;
+    padding-top: 55px;
+}
+
+.personal_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 8px;
+}
+
+.personal_title{
+    font-size: 17px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.data{
+    font-size: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.category_data{
+    padding: 10px;
+    color: black;
+    text-align: left;
+    color: black;
+}
+
+/* Orders and favorites (Заказы и частично избранное)*/
+
+.orders{
+    margin: 16px 0;
+    padding: 8px;
+    display: block;
+
+}
+
+.order{
+    border-color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 8px;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.order_info{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.category_order1{
+    width: 25%;
+    margin: 0 5% 0 0;
+}
+
+.category_order2{
+    padding:15px 0 0 0;
+}
+
+
+
+
+
+.order_inner{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding: 10px 0 0 0;
+}
+
+/* Favorites (Избранное)*/
+
+.image{
+    width:200px;
+    height: 120px;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 100%;
+}
+
+.name_grade{
+    display: flex;
+    flex-direction: row;
+}
+
+.name{
+    width: 100%;
+}
+
+.grade{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grade_number{
+    align-items: center;
+    background: #0656fe;
+    border-radius:6px;
+    color: #fff;
+    height: 32px;
+    min-width: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.review{
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_desc{
+    width: 85%;
+}
+
+/* Feedback and Bron */
+
+.feedback{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.booking{
+    padding:7px 0 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* Feedback and Bron buttons*/
+
+.feedback_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 23%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 0 1% 76%;
+}
+
+.bron_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 35%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 0 0 67%;
+}
+
+.signout{
+    margin: 0  0 0 11%;
+    width: 174%;
+}
+
+.input_signout{
+    background-color: #000080;
+    color:#FFFFFF;
+    font-size: 16px
+}
+
+input{
+    width: 45%;
+    height: 25px;
+    border-radius: 10px 10px 10px 10px
+}
+
+table{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.redactF_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+
+}
+
+.redactF_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.redactF_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.redactF_button:hover span {
+    padding-right: 25px;
+}
+
+.redactF_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

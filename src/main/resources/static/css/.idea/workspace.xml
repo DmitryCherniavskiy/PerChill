@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d59cd0f-076b-4c4c-a716-f5bb3f886d82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/keystore.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.github/workflows/maven.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec3-sample-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec3-sample-jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/nb-configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/DBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/SchoolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec4-sample-jpa/src/main/java/info/stepanoff/trsis/samples/db/dao/SchoolDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/config/ControllersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/config/ControllersConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/db/dao/SchoolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/db/model/Batch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/db/model/School.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/rest/SchoolRestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/service/SchoolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/info/stepanoff/trsis/samples/service/SchoolServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/schools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/schools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/db/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/db/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/rest/SchoolRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/java/info/stepanoff/trsis/samples/rest/SchoolRestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../lec6-simple-secure-app/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../nb-configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29RBiM9oq1bys22QA5duvAXJZiZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../lec4-sample-jpa" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d59cd0f-076b-4c4c-a716-f5bb3f886d82" name="Default Changelist" comment="" />
+      <created>1653066143792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653066143792</updated>
+      <workItem from="1653066145204" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="469" y="119" key="FileChooserDialogImpl" timestamp="1653066249100">
+      <screen x="0" y="0" width="1376" height="727" />
+    </state>
+    <state x="469" y="119" key="FileChooserDialogImpl/0.0.1376.727@0.0.1376.727" timestamp="1653066249100" />
+  </component>
+</project>

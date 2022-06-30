@@ -1,0 +1,587 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    background-color: #0656fe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav{
+    font-size: 20px;
+}
+
+.header_link{
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto 20px;
+}
+
+.header_link:hover{
+    background-color: #1676df;
+}
+
+/* INTRO */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    background-color: #0656fe;
+    margin-top: 5%
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.find_title{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+
+}
+
+/* Main */
+
+.main{
+    background-color: white;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px;
+
+}
+
+/* Personal data */
+
+.main_inner{
+    display: flex;
+    flex-direction:column
+
+}
+
+.div_form{
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    height: 22vh;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.avatar_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 17px;
+    margin: 0 auto;
+    color: black;
+    padding-top: 55px;
+}
+
+.personal_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 8px;
+}
+
+.personal_title{
+    font-size: 17px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.data{
+    font-size: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.category_data{
+    padding: 10px;
+}
+
+/* Orders and favorites (Р—Р°РєР°Р·С‹ Рё С‡Р°СЃС‚РёС‡РЅРѕ РёР·Р±СЂР°РЅРЅРѕРµ)*/
+
+.orders{
+    margin: 16px 0;
+    padding: 8px;
+    display: block;
+
+}
+
+.order{
+    border-color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 8px;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.order_info{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.category_order1{
+    width: 25%;
+    margin: 0 5% 0 0;
+}
+
+.category_order2{
+    padding:15px 0 0 0;
+    color: black;
+}
+
+.category_order3{
+    width: 100%;
+    margin: 0 5% 0 0;
+}
+
+
+
+.order_inner{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding: 10px 0 0 0;
+}
+
+/* Favorites */
+
+.image{
+    width:200px;
+    height: 120px;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 100%;
+}
+
+.name_grade{
+    display: flex;
+    flex-direction: row;
+}
+
+.name{
+    width: 100%;
+}
+
+.grade{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grade_number{
+    align-items: center;
+    background: #0656fe;
+    border-radius:6px;
+    color: #fff;
+    height: 32px;
+    min-width: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.review{
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_desc{
+    width: 85%;
+}
+
+/* Feedback and Bron */
+
+.feedback{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.booking{
+    padding:7px 0 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* Feedback , Bron, Add buttons*/
+
+.feedback_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 23%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 0 1% 76%;
+}
+
+.feedback_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.feedback_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.feedback_button:hover span {
+    padding-right: 25px;
+}
+
+.feedback_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bron_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 35%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 0 0 67%;
+}
+
+.bron_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bron_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bron_button:hover span {
+    padding-right: 25px;
+}
+
+.bron_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.add_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+}
+
+.add_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.add_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.add_button:hover span {
+    padding-right: 25px;
+}
+
+.add_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.redact_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+}
+
+.redact_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.redact_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.redact_button:hover span {
+    padding-right: 25px;
+}
+
+.redact_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.category_transport{
+    padding: 10px 0 0 34.5%;
+}
+
+.transport{
+    padding: 7px 0 0 0;
+    justify-content: center;
+    flex-direction: row;
+}
+
+input{
+    width: 45%;
+    height: 25px;
+    border-radius: 10px 10px 10px 10px
+}
+
+.input_child{
+    margin: 0 0 0 59px;
+}
+
+.input_abroad{
+    margin: 0 0 0 41px;
+}
+
+
+.input_transportClass{
+    width: 100%;
+}
+
+.input_transportDiscr{
+    width: 100%;
+}
+
+.input_number{
+    width: 100%;
+}
+
+.input_class{
+    width: 100%;
+}
+
+.input_count{
+    width: 100%;
+}
+
+.input_model{
+    width: 100%;
+}
+
+.input_desc{
+    width: 100%;
+}
+
+.input_year{
+    width: 100%;
+}
+
+.input_signout{
+    background-color: #000080;
+    color:#FFFFFF;
+    font-size: 16px
+}
+
+.avatarTrans{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 22vh;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.redactF_button {
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #0656fe;
+    border: none;
+    border-bottom-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+
+}
+
+.redactF_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.redactF_button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.redactF_button:hover span {
+    padding-right: 25px;
+}
+
+.redactF_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.isp{
+    margin: 0  0 0 16%;
+}
+
+.signout{
+    margin: 0  0 0 11%;
+    width: 174%;
+}
+
+table{
+    width: 100%;
+}
+
+
+
+

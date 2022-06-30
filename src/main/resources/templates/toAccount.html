@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+
+    <meta name="_csrf" content="${_csrf.token}" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.parameterName}" th:content="${_csrf.parameterName}"/>
+
+    <link rel="stylesheet" href="../static/css/transportPage.css" media="screen" th:href="@{/css/transportPage.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>PerChill</title>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js" th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js}"></script>
+    <script src="js/toAccount.js" th:src="@{js/toAccount.js}"></script>
+
+</head>
+<body ng-app="to" ng-controller="ToController">
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a class="header_link" href="/">PerChill</a>
+            </div>
+            <nav class="nav">
+                <div sec:authorize="isAnonymous()" >
+                    <a class="header_link" href="/login">Login</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+                    <div sec:authorize="hasAuthority('user')">
+                        <a class="header_link" href="/clientAccount">Моя страница</a>
+                    </div>
+                    <div sec:authorize="hasAuthority('to')">
+                        <a class="header_link" href="/toAccount">Моя страница</a>
+                    </div>
+                    <form class="signout" name="logoutForm" th:action="@{/logout}" method="post">
+                        <input type="submit"  class="input_signout" value="Выход"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="find_title">Личный профиль</h1>
+            <div class="main">
+                <h2 class="personal_title">Персональные данные</h2>
+                <div class="main_inner">
+                        <div class="div_form" ng-controller="getInfo">
+                            <div class="image">
+                                <a href="#"><img class="image" src="{{info.image}}" alt=""></a>
+                            </div>
+                            <div class="personal_data">
+                                <div class="data">
+                                    <form ng-submit="editInfo()">
+                                        <div class="transport">
+                                            <a id="telephone" class="category_data">Телефон: {{info.telephone}}</a>
+                                        </div>
+                                        <table>
+                                            <tr><td><a class="category_data">Фамилия: </a></td><td><input type="" class="input_sname" id="input_sname" name="input_sname" ng-model="info.sname"></td></tr>
+                                            <tr><td><a class="category_data">Имя: </a></td><td><input type="" class="input_name" id="input_name" name="input_name" ng-model="info.name"></td></tr>
+                                            <tr><td><a class="category_data">Отчество: </a></td><td><input type="" class="input_pname" id="input_pname" name="input_pname" ng-model="info.pname"></td></tr>
+                                            <tr><td><a class="category_data">Почта: </a></td><td><input type="" class="input_email" id="input_email" name="input_email" ng-model="info.email"></td></tr>
+                                            <tr><td><a class="category_data">Картинка: </a></td><td><input type="" class="input_image" id="input_image" name="input_image" ng-model="info.image"></td></tr>
+                                            <tr><td><a class="category_data">Описание:</a></td><td><textarea rows="6" cols="30" type="" class="input_sname" id="input_description" name="input_description" ng-model="info.description"></textarea></td></tr>
+                                            <tr><td></td><td><button class="redactF_button" type="submit">
+                                            <span>Редактировать</span>
+                                            </button></td></tr>
+                                        </table>
+                                    </form>
+                                    <form ng-submit="editTariff()">
+                                        <div>
+                                            <a>Перевозка детей:</a>
+                                            <p><input type="radio" id="childrenYes" name="input_children" ng-model="info.children" value="Да">Да<p>
+                                            <p><input type="radio" id="childrenNo" name="input_children" ng-model="info.children" value="Нет">Нет</p>
+                                        </div>
+                                        <div>
+                                            <a>Поездки за границу:</a>
+                                            <p><input type="radio" id="abroadYes" name="input_abroad" ng-model="info.abroad" value="Да">Да</p>
+                                            <p><input type="radio" id="abroadNo" name="input_abroad" ng-model="info.abroad" value="Нет">Нет</p>
+                                        </div>
+                                        <button class="redactF_button" type="submit">
+                                            <span>Подтвердить</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="orders">
+                    <h2 class="personal_title">Добавление транспортного средства</h2>
+                    <div class="order">
+                        <div class="div_form">
+                            <div class="alert alert-danger" role="alert" ng-show="errormessage">{{errormessage}}</div>
+                            <form class="personal_data" ng-submit="addTransport()">
+                                    <table>
+                                        <tr><td><a class="category_order2">Модель:</a></td><td><input type="text" class="input_model" id="inputModel" name="inputModel" ng-model="inputModel" placeholder=""></td></tr>
+                                        <tr><td><a class="category_order2">Год выпуска:</a></td><td><input type="text" class="input_year" id="inputYear" name="inputYear" ng-model="inputYear" placeholder=""></td></tr>
+                                        <tr><td><a class="category_order2">Класс:</a></td><td><input type="text" class="input_class" id="inputClass" name="inputClass" ng-model="inputClass" placeholder=""></td></tr>
+                                        <tr><td><a class="category_order2">Количество мест:</a></td><td><input type="text" class="input_count" id="inputNumber" name="inputNumber" ng-model="inputNumber" placeholder=""></td></tr>
+                                        <tr><td> <a class="category_order2">Описание:</a></td><td><input type="text" class="input_desc" id="inputDesc" name="inputDesc" ng-model="inputDesc" placeholder=""></td></tr>
+                                        <tr><td></td><td><button type="submit" class="add_button">
+                                            <span>Добавить</span>
+                                        </button></td></tr>
+                                    </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="transports" ng-controller="getTransport" ng-show="transports.length > 0">
+                    <h2 class="personal_title">Ваши транспортные стредства</h2>
+                    <div class="transport" ng-repeat="transport in transports" id="{{transport.id}}">
+                        <div class="div_form">
+                            <div class="image">
+                                <a href="#"><img class="image" src="{{transport.image}}" alt=""></a>
+                            </div>
+                            <div class="personal_data">
+                                <table>
+                                    <tr><td><a class="category_order2">Модель:</a></td><td><input type="" class="input_model" placeholder="" value="{{transport.model}}"></td></tr>
+                                    <tr><td><a class="category_order2">Класс:</a></td><td><input type="" class="input_transportClass" placeholder="" value="{{transport.transportClass}}"></td></tr>
+                                    <tr><td><a class="category_order2">Количество мест:</a></td><td><input type="" class="input_number" placeholder="" value="{{transport.number}}"></td></tr>
+                                    <tr><td><a class="category_order2">Год выпуска:</a></td><td><input type="" class="input_year" placeholder="" value="{{transport.year}}"></td></tr>
+                                    <tr><td> <a class="category_order2">Описание:</a></td><td><input type="" class="input_year" placeholder="" value="{{transport.description}}"></td></tr>
+                                    <tr><td> <a class="category_order2">Описание:</a></td><td><input type="" class="input_year" placeholder="" value="{{transport.image}}"></td></tr>
+                                    <tr><td></td><td><button class="redact_button" ng-click="" type="submit">
+                                        <span>Редактировать</span>
+                                    </button></td></tr>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orders" ng-controller="getOrders" ng-show="orders.length > 0">
+                    <h2 class="personal_title">Заказы</h2>
+                    <div class="order" ng-repeat="order in orders track by $index" id="{{order.id}}">
+                        <div class="order_info">
+                            <a id="date{{$index}}" class="category_order1">Дата создания заказа: {{order.date}}</a>
+                            <a id="start{{$index}}" class="category_order1">Дата отправления: {{order.date_start}}</a>
+                            <a id="from{{$index}}" class="category_order1">Откуда: {{order.start_place}}</a>
+                            <a id="whereid{{$index}}" class="category_order1">Куда: {{order.end_place}}</a>
+                        </div>
+                        <a class="category_order2">Заказчик: {{order.client.name + ' ' + order.client.sname + ' ' + order.client.pname}}</a>
+                        <a class="category_order2">Телефон заказчика: {{order.client.telephone}}</a>
+                        <div class="feedback"></div>
+                        <a id="price{{$index}}" class="category_order2">Стоимость: {{order.price}}</a>
+                        <a id="status{{$index}}" class="category_order2">Статус заказа: {{order.status}}</a>
+                        <button ng-click="cancelOrder(order.id)" class="feedback_button">
+                            <span>Отменить</span>
+                        </button>
+                        <button ng-click="confirmOrder(order.id)" class="feedback_button">
+                            <span>Подтвердить</span>
+                        </button>
+                        <button ng-click="openChat(order.client.id)" class="feedback_button">
+                            <span>Открыть чат</span>
+                        </button>
+                    </div>
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+</body>
+</html>
